@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoLearn - Kriptografi Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🔐 CryptoLearn</h1>
+  <p class="subtitle">Website Edukasi Kriptografi Sederhana</p>
+
+  <div class="container">
+
+    <!-- Caesar Cipher -->
+    <div class="card">
+      <h2>Caesar Cipher</h2>
+
+      <label>Pesan:</label>
+      <input type="text" id="caesarText">
+
+      <label>Shift:</label>
+      <input type="number" id="caesarShift" value="3">
+
+      <button onclick="encryptCaesar()">Enkripsi</button>
+      <button onclick="decryptCaesar()">Dekripsi</button>
+
+      <p><strong>Hasil:</strong></p>
+      <div class="output" id="caesarResult"></div>
+    </div>
+
+    <!-- Vigenere Cipher -->
+    <div class="card">
+      <h2>Vigenère Cipher</h2>
+
+      <label>Pesan:</label>
+      <input type="text" id="vigenereText">
+
+      <label>Kunci:</label>
+      <input type="text" id="vigenereKey">
+
+      <button onclick="encryptVigenere()">Enkripsi</button>
+      <button onclick="decryptVigenere()">Dekripsi</button>
+
+      <p><strong>Hasil:</strong></p>
+      <div class="output" id="vigenereResult"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Matematika Diskrit • Aritmetika Modulo</p>
+  </footer>
+
+  <script src="crypto.js"></script>
+</body>
+</html>
